@@ -1,40 +1,49 @@
+p {
+  line-height: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    padding: 0 2rem;
+    height: 20rem;
+  }
+}
+
+form {
+  margin: 1.5rem 0;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 20vmin;
+  height: 2.25rem;
+  animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .App-Bar {
-  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-main {
-  display: flex;
-  justify-content: center
-}
-
-.Paper {
-  margin-top: 2rem;
-  width: 30rem;
-  height: 15rem;
-  max-width: 35rem;
-  padding: 1.25rem;
-}
-
-@media screen and (max-width: 400px) {
-  .Paper {
-    max-width: 80vw;
-    height: 20rem;
-  }
-}
-
 .subtitle {
-  text-align: left;
+  font-weight: 400;
 }
